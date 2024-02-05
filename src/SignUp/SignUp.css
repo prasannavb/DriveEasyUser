@@ -1,0 +1,116 @@
+.SignUp
+{
+    width: 100%;
+    height: 70%;
+    padding: 1%;
+}
+
+.SignUp-Form-div
+{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.SignUp-Form
+{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.SignUp-Form-title-div
+{
+    width: 100%;
+    text-align: center;
+}
+.SignUp-Form-title
+{
+    margin: 0;
+}
+
+.SignUp-Form-div-1,.SignUp-Form-div-2,.SignUp-Form-div-3
+{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.SignUp-Form-Name,.SignUp-Form-Email,.SignUp-Form-Password,.SignUp-Form-ConfirmPassword,.SignUp-Form-Phone,.SignUp-Form-Location
+{
+    width: 50%;
+    padding:1.7%;
+    display: flex;
+    flex-direction: column;
+}
+.SignUp-Form-Name input[type='text'],.SignUp-Form-Email input[type='email'],.SignUp-Form-Password input[type='password'],.SignUp-Form-Phone input[type='number'],
+.SignUp-Form-Location input[type='text'],.SignUp-Form-ConfirmPassword input[type='password']
+{
+    border: none;
+    outline: none;
+    outline-offset: none;
+    border: 2px solid black;
+    padding: 2%;
+    margin: 1%;
+    font-size: medium;
+}
+.SignUp-Form-Name-label,.SignUp-Form-Email-label,.SignUp-Form-Password-label,.SignUp-Form-ConfirmPassword-label,.SignUp-Form-Phone-label,.SignUp-Form-Location-label
+{
+    font-weight: bold;
+    margin: 0% 1%;
+}
+.Errmsg
+{
+    color: red;
+    margin: 1%;
+
+}
+.SignUp-Form-SignUpbtn
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+}
+.SignUp-Form-btn
+{
+    background-color: #222;
+    width:25%;
+    color: white;
+    padding: 1%;
+    margin: 1%;
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.5s;
+
+}
+
+.SignUp-Form-btn:hover
+{
+    background-color: #333;
+}
+.SignUp-Form-Login
+{
+    margin-left:0.1% ;
+    font-weight: bold;
+    text-decoration: none;
+}
+.SignUp-Form-Login:hover
+{
+    text-decoration: underline;
+}
+.SignUp-img-div
+{
+    width: 30%;
+}
+
+.SignUp-img
+{
+    width: 100%;
+    height: 100%;
+}

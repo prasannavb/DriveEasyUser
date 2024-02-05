@@ -1,0 +1,440 @@
+.CarsList
+{
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.CarsList-CardDeck
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.CarsList-Dates-div,.Not-Found-Dates-div
+{
+  border-right:2px solid lightslategray;
+  width: 20%;
+  padding-top:1.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.CarsList-Dates-Search
+{
+  width: 75%;
+  margin-top:5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.CarsList-Dates,.Not-Found-Dates
+{
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  width: 75%;
+  height:40vh;
+  margin-top:10%; 
+  display: flex;
+  flex-direction: column;
+}
+
+.CarsList-PickUp,.CarsList-ReturnDate,.CarsList-Date-FindCarbtns,.Not-Found-PickUp,.Not-Found-ReturnDate,.Not-Found-Date-FindCarbtns
+{
+  border-radius: 5px;
+  background-color:white;
+  width: 100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.CarsList-PickUp b,.CarsList-ReturnDate b,.Not-Found-PickUp b,.Not-Found-ReturnDate b
+{
+  margin: 2.5%;
+}
+
+.CarsList-PickUp input[type='date'],.CarsList-ReturnDate input[type='date'],.Not-Found-PickUp input[type='date'],.Not-Found-ReturnDate input[type='date']
+{
+    border: 2px solid #222;
+    padding: 3%;
+    margin: 2% auto;
+    cursor: pointer;
+}
+
+.CarsList-Date-FindCarbtns,.Not-Found-Date-FindCarbtns
+{
+  height: fit-content;
+}
+.CarsList-Date-FindCarbtns button,.Not-Found-Date-FindCarbtns button
+
+{
+  background-color: #333;
+  transition: background-color 0.3s;
+  color:white;
+  border-radius:3px;
+  width: 100%;
+  padding: 3%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.CarsList-Date-FindCarbtns button:hover,.Not-Found-Date-FindCarbtns button:hover
+{
+  background-color:#222;
+}
+
+
+.CarsList-Cards
+{
+  width: 80%;
+  height: 100%;
+  padding: 2%;
+  margin-left:0.5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow-y: scroll;
+}
+.CarsList-Cards-Car
+{
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 31%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  
+  }
+
+  .CarsList-Cards-Car:hover
+  {
+    transform: scale(1.01);
+  }
+
+.CarsList-Cars-Img-div
+{
+  border-radius: 5px;
+  width: 100%;
+  height: 60%;
+}
+.CarsList-Car-Img
+{
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px;
+
+}
+
+.CarsList-Cars-div
+{
+  width: 100%;
+  height: 40%;
+  margin-top: 2%;
+}
+.CarsList-Cars-div-1
+{
+  width: 100%;
+  padding:1%;
+  margin-bottom: 1%;
+}
+
+.CarsList-Cars-div-1 h2
+{
+  margin: 0 0 0 3%;
+}
+
+.CarsList-Cars-div-2
+{
+  width:80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 1%;
+
+}
+.CarsList-Cars-div-2 span
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left:1%;
+}
+
+.CarsList-Cars-div-3
+{
+  padding: 1% 0% 1% 3%;
+  margin-bottom: 1%;
+}
+.CarsList-Cars-div-4
+{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1%;
+
+}
+.CarsList-Cars-Price
+{
+  width: 50%;
+  padding-left: 3%;
+}
+.CarsList-Cars-Price h3
+{
+  margin: 0;
+}
+
+.CarsList-Cars-Tag
+{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.CarsList-Cars-Tag p
+{
+  border-radius: 5px;
+  padding:2px;
+  margin: 0;
+  text-decoration: none;
+  background-color:rgb(255, 234, 234);
+  color:rgb(223, 67, 67);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.CarsList-Cards-Cars-btns
+{
+  width: 100%;
+  margin-top: 1%;
+}
+.CarsList-Cards-Cars-btns button
+{
+  border: none;
+  color: white;
+  background-color: #333;
+  font-weight: bold;
+  width: 100%;
+  padding:2%;
+}
+
+.TryFiltersbtn
+{
+  background-color: #333;
+  transition: background-color 0.3s;
+  color:white;
+  border-radius:3px;
+  width: 100%;
+  padding: 3%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.CarsList-Cards-Cars-btns button:hover,.TryFiltersbtn:hover
+{
+  background-color: #222;
+  cursor: pointer;
+}
+.TryFilters-div
+{
+  width: 75%;
+  margin-top: 5%;
+}
+.Not-Found-List
+{
+  background-color: whitesmoke;
+  width: 100%;
+  display: flex;
+  flex-direction:row;   
+}
+.Not-Found-Status-div
+{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:grey;
+}
+.Not-Found-Img-div
+{
+    width: 50%;
+    height: 60%;
+    justify-self: flex-start;
+}
+.Not-Found-Img
+{
+  width: 100%;
+  height: 100%;
+}
+
+.Not-Found-Status
+{
+  width:75%;
+  height: 30%;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+}
+
+.Not-Found-Status p
+{
+  margin:0.5% ;
+  text-align: center;
+
+}
+.Not-Found-Status ul li
+{
+  margin: 1.5% 0%;
+}
+
+.Not-Found-Status ul
+{
+  justify-self: center;
+  align-self: center;
+}
+
+.Filters
+{
+  background-color: whitesmoke;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.Filter-Maindiv-2,.Filter-Maindiv-3
+{
+  background-color: white;
+  border-radius:10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width:23.5%;
+  margin-top:1%;
+  margin-left:1%;
+  padding:0.5%;
+  display: flex;
+  flex-direction: column;
+}
+.Filter-Maindiv-1,.Filter-Maindiv-4
+{
+  background-color: whitesmoke;
+  border-radius:10px;
+  width:23.5%;
+  margin-top:1%;
+  margin-left:1%;
+  display: flex;
+  flex-direction: column;
+}
+.Filter-Subdiv-1,.Filter-Subdiv-2,.Filter-Subdiv-3,.Filter-Subdiv-4
+{
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom:10%;
+  padding:1%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.Filter-Maindiv-1 b,.Filter-Maindiv-2 b,.Filter-Maindiv-3 b,.Filter-Maindiv-4 b
+{
+  margin:2% 4%;
+  color:rgb(85, 69, 69);
+
+}
+
+.Filter-Clearbtn
+{
+  color: #551A8B;
+  background-color: transparent;
+  border: none;
+  margin-left:2%;
+  cursor: pointer;
+  font-size: medium;
+}
+.Filter-Clearbtn:hover
+{
+  text-decoration: underline;
+}
+.Filter-Ratings
+{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.Filter-Fuel,.Filter-Make,.Filter-Model,.Filter-Type,.Filter-Location,.Filter-Ratings 
+{
+  background-color: white;
+  border-radius:2px;
+  width:100%;
+  padding:3%;
+  font-size: larger;
+}
+
+.Filter-Fuel input[type="checkbox"],
+.Filter-Model input[type="checkbox"],
+.Filter-Make input[type="checkbox"],
+.Filter-Type input[type="checkbox"],
+.Filter-Location input[type="checkbox"]
+{
+  accent-color: #333;
+  cursor: pointer;
+}
+.Filter-close-div input[type='checkbox']
+{
+  width: 15px;
+  height: 15px;
+}
+
+.Filters b
+{
+  font-size: larger;
+}
+
+.Filter-btns
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top:1%;
+  padding-right: 2%;
+}
+.ApplyFilter,.ClearFilter
+{
+  border: none;
+  border-radius:2px;
+  background-color:#333;
+  transition: background-color 0.5s;
+  color: white;
+  padding:0.7%;
+  margin-left: 2%;
+  cursor: pointer;
+}
+.ApplyFilter:hover
+{
+    background-color: #222;
+}
+
+.ClearFilter
+{
+  background-color: rgb(223, 67, 67);
+}
+.ClearFilter:hover
+{
+  background-color: rgba(165, 47, 47, 0.985);
+}
+
+.Filter-close-div
+{
+  background-color: whitesmoke;
+  width: 100%;
+  height:75vh;
+}

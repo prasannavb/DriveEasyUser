@@ -1,0 +1,373 @@
+.Pay
+{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Pay-Nav
+{
+    background-color: #222;
+    padding: 1%;
+}
+.Pay-Nav button
+{
+    border: none;
+    background-color: transparent;
+}
+
+
+.Pay-banner
+{
+    background-image: url('../Images/Pay/PayCarImage.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+}
+.Pay-banner-overlay
+{
+    width: 100%;
+    height:60vh;
+    background-color: rgba(0,0,0,0.5) ;
+    z-index: 10; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+.Pay-banner-overlay h2
+{
+    margin: auto;
+    margin-bottom:2%;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+}
+
+.Pay-CarDetails
+{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+}
+.Pay-CarDetails-div-1,.Pay-CarDetails-div-2,.Pay-CarDetails-div-3
+{
+    background-color: white;
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+}
+.Pay-CarDetails-div-2
+{
+    width:100%;
+}
+.Pay-CarDetails-div-3 p
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Pay-CarDetails-logo,.Pay-CarDetails-table
+{
+    width:100%;
+    height: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.Pay-CarDetails-logo h2
+{
+    margin: 0%;
+    text-align: center;
+}
+
+.Pay-CarDetails-logo img
+{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.Pay-CarDetails-table-1,.Pay-CarDetails-table-2,.Pay-CarDetails-table-3,.Pay-ApplyCoupon
+{
+    width: 100%;
+    margin-top:2%;
+    display: flex;
+    flex-direction: row;
+}
+.Pay-CarDetails-table-1 div,.Pay-CarDetails-table-2 div,.Pay-CarDetails-table-3 div
+{
+    width: 33.3%;
+    height:100%;
+    padding: 1%;
+
+}
+.Pay-CarDetails-table-1 div p,.Pay-CarDetails-table-2 div p,.Pay-CarDetails-table-3 p
+{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.Pay-CarDetails-div-3
+{
+    padding: 2%;
+}
+.Pay-CarDetails-div-3 h2
+{
+    margin: 0;
+}
+.Pay-CarDetails-div-3 p
+{
+    margin-left: 2%;
+}
+.Payment-Details-div
+{
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Pay-CreditCard
+{
+    border-radius: 5px;
+    background-color: white;
+    width: 40%;
+    padding: 1%;
+    margin-left: 2%;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.Pay-CreditCard-div-1
+{
+    width: 100%;
+}
+.Pay-CreditCard-div-1 h2
+{
+    margin: 0;
+    padding: 0.5%;
+}
+
+.Pay-CreditCard-div-2
+{
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+}
+.Pay-CreditCard-div-2 div
+{
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Pay-CreditCard-div-2 div:hover
+{
+    background-color:rgb(223, 67, 67);
+    color:white;
+    cursor: pointer;
+}
+
+.Pay-CreditCard-div-2 div p
+{
+    margin: 0;
+}
+.Pay-CreditCard-Details-div-1,.Pay-CreditCard-Details-div-2
+{
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+}
+.Pay-CreditCard-Details-div-1 label,.Pay-CreditCard-Details-div-2 label
+{
+    font-weight: bolder;
+    margin-top: 1%;
+    padding: 1.5%;
+
+
+}
+
+.Pay-CreditCard-Details-div-1 input,.Pay-CreditCard-Details-div-2 input
+{
+    background-color: rgb(249, 249, 249);
+    border: none;
+    outline: none;
+    outline-offset: none;
+    border: 2px solid #333;
+    border-radius:2px ;
+    width: 75%;
+    padding: 1.5%;
+    margin:1% 0 1% 2%;
+}
+
+.Pay-CreditCard-Details-div-3,.Pay-CreditCard-Details-div-5
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+.Pay-CreditCard-Details-div-5 img
+{
+    width: 100%;
+    height: 100%;
+}
+.Pay-CreditCard-Details-ExpDate,.Pay-CreditCard-Details-CVV
+{
+    width: 50%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.Pay-CreditCard-Details-ExpDate label,.Pay-CreditCard-Details-CVV label
+{
+    margin: 2%;
+    font-weight: bolder;
+}
+.Pay-CreditCard-Details-ExpDate input,.Pay-CreditCard-Details-CVV input
+{
+    background-color: rgb(249, 249, 249);
+    border: none;
+    outline: none;
+    outline-offset: none;
+    border: 2px solid #333;
+    border-radius:2px ;
+    width: 75%;
+    padding:2.5%;
+    margin:1% 0 1% 2%;
+}
+.Pay-CreditCard-Details-div-4 
+{
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Pay-CreditCard-Details-div-4 button
+{
+    background-color: rgb(223, 67, 67);
+    color:white;
+    border: none;
+    border-radius:2px ;
+    padding: 2%;
+    margin-top:2%;
+    transition: background-color 0.5s;
+    
+}
+.Pay-CreditCard-Details-div-4 button:hover
+{
+    background-color: rgba(165, 47, 47, 0.985);
+    cursor: pointer;
+}
+.Pay-UPI
+{
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.Pay-UPI div
+{
+    width: 50%;
+    margin-top:5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Pay-UPI div p
+{
+    margin: 0%;
+    text-align: center;
+}
+
+.VISA-CARD
+{
+    border: 2px solid rgb(223, 67, 67);
+}
+.Pay-CreditCard-div-3 span
+{
+    margin-left: 2%;
+    color:red;
+}
+.Pay-CreditCard-ApplyCoupon
+{
+    width: 15%;
+    height: fit-content;
+    margin-left:1%;
+    padding:1%;
+    border-radius: 5px;
+    background-color: white;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.Pay-CreditCard-ApplyCoupon p
+{
+    font-weight: bolder;
+}
+.Pay-CreditCard-ApplyCoupon input
+{
+    padding:5%;
+}
+.Pay-CreditCard-ApplyCoupon button
+{
+    background-color: rgb(223, 67, 67);
+    color:white;
+    border: none;
+    padding: 5%;
+    transition: background-color 0.5s;
+    margin:5%;
+    margin-left:18%;
+}
+.Pay-CreditCard-ApplyCoupon button:hover
+{
+    background-color: rgba(165, 47, 47, 0.985);
+    cursor: pointer;
+}
+.Pay-CreditCard-ApplyCoupon input
+{
+    text-transform: uppercase;
+}
+
+.Pay-Steps
+{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 94%;
+    padding: 2%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+}
+
+.Pay-Alert-Warning
+{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom:1% ;
+    padding: 1%;
+    background-color: #ffd666;
+
+}
+.Pay-Steps-Meter
+{
+    color:red;
+}

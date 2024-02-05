@@ -1,0 +1,67 @@
+.Fleet
+{
+    width: 100%;   
+    display: flex;
+    flex-direction: column;
+}
+
+.Fleet-title-div
+{
+    width: 100%;
+    padding:1.5%;
+    display: flex;
+    justify-content: center;
+}
+.Fleet-title
+{
+    margin: 0;
+    width: fit-content;
+    border-bottom: 5px double rebeccapurple;
+}
+
+.Fleet-Cards-div
+{
+    background-color: #222;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+.Fleet-Cards
+{
+    background-color: #222;
+    width: 100%;
+    height: 100%;
+    padding: 2% 1%; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+}
+.Fleet-Cars
+{
+    width:25%;
+    height:auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.Fleet-Cars img 
+{
+    width: 100%;
+    height: 100%;
+}
+
+.Fleet-name
+{
+    background-color:black;
+    opacity: 0.9;
+    color: white;
+    width:fit-content;
+    padding: 2.5%;
+    position: relative;
+    bottom:12.5%;
+
+}

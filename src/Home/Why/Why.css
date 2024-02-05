@@ -1,0 +1,69 @@
+.Why
+{
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Why-title-div
+{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Why-title-div h1
+{
+    width: fit-content;
+    border-bottom: 5px double rebeccapurple;
+}
+
+.Why-cards-div
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Why-cards
+{
+    color: #fff;
+    width: 25%;
+    padding:1.5%;
+    margin: 2%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.Why-cards:nth-child(even)
+{
+    background-color: #0d1128;
+    transition: background-color 0.3s;
+
+    
+}
+.Why-cards:nth-child(even):hover
+{
+    background-color: #0d0f1a;
+
+}
+
+
+.Why-cards:nth-child(odd)
+{
+    background-color: #fd5f00;
+    transition: background-color 0.3s;
+}
+
+.Why-cards:nth-child(odd):hover
+{
+    background-color: #e65800;
+}
+
+.Why-cards p
+{
+    text-align: justify;
+}

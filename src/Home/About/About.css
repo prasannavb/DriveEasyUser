@@ -1,0 +1,43 @@
+.About
+{
+    background-color: whitesmoke;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+.About-info
+{
+    width: 50%;
+    padding:3%;
+}
+
+.About-info-title
+{   
+    margin: 0;
+    border-bottom: 5px double rebeccapurple;
+    width: fit-content;
+    margin-bottom:5%;
+
+}
+.About-info-desc
+{
+    text-align: justify;
+}
+
+
+.About-img-div
+{
+    width: 50%;
+    padding: 1%;
+}
+
+.About-img
+{
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}

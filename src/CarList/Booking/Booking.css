@@ -1,0 +1,353 @@
+ .Booking
+ {
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+ }
+
+ .Bookings-Banner
+ {
+   border: 2px solid red;
+   width: 100%;
+ }
+
+ .Bookings-CardDeck
+ {
+   background-color: whitesmoke;
+   width: 100%;
+   height: 100%;
+   padding:0.5%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+ }
+
+ .Bookings-Card-Car
+ {
+   width: 50%;
+   margin: 2%;
+ }
+
+ .Bookings-Card-Car-title
+ {
+   border-left:5px solid  orangered;
+   width: 100%;
+   height: fit-content;
+   padding: 0.1%;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   display: flex;
+   flex-direction: row;
+   background: repeating-linear-gradient( -45deg, #e1e0e0, #e1d8d8 2px, #d0d0db 2px, #d0d0d2 10px );
+
+ }
+ .Bookings-Card-Car-title h1
+ {
+   padding: 0 3%;
+ }
+ .Bookings-Backbtn-header
+ {
+   
+   background-color: transparent;
+   border: none;
+   margin-left: 2%;
+   align-self: center;
+   cursor: pointer;
+ }
+
+.Bookings-Card-Car-Img
+{
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   height:60vh;
+   margin-top: 2%;
+   
+}
+.Bookings-Card-Car-Img img
+{
+   width: 100%;
+   height: 60vh;
+}
+
+.Bookings-Card-Car-box-title
+{
+   background: repeating-linear-gradient( -45deg, #e1e0e0, #e1d8d8 2px, #d0d0db 2px, #d0d0d2 10px );
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   padding: 1%;
+   margin-top: 2%;
+   display: flex;
+   flex-direction: row;
+}
+
+.Bookings-Card-Car-box-title div
+{
+   width: 35%;
+   padding:1.5%;
+   text-transform: uppercase;
+   cursor: pointer;
+   text-align: center;
+}
+.Bookings-Car-Description
+{
+   background-color: white;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   padding: 2%;
+   text-align: justify;
+}
+.Bookings-Car-Description-Link
+{
+   text-decoration: none;
+   color:darkblue;
+}
+.Bookings-Car-Description-Link:hover
+{
+   text-decoration: underline;
+}
+
+
+.Bookings-Car-Specification
+{
+   background-color: white;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   flex-direction: row;
+}
+.Bookings-Car-Specification-div-1,.Bookings-Car-Specification-div-2
+{
+   width: 50%;
+   height: 100%;
+   padding: 1%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   align-items:center;
+}
+.Bookings-Car-Specification-div-1 div,.Bookings-Car-Specification-div-2 div
+{
+   width: 75%;
+   padding:2.5%;
+   margin: 1%;
+   text-align: left;
+}
+
+.Bookings-Review-CardDeck
+{
+   background-color: whitesmoke;
+   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2), 0 3px 1px -2px rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.14);
+   width: 100%;
+   height:40vh;
+   padding:2%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   overflow-x: auto;  
+   scroll-snap-type: x mandatory;
+}
+ 
+.Bookings-Review-Cards:hover
+{
+   transform: scale(1.05);
+   cursor: pointer;
+}
+
+.Bookings-Review-Cards
+{
+   border-radius: 25px;
+   background-color: white;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   width: 40%;
+   margin-left:2%;
+   padding: 1%;
+   display: flex;
+   flex-direction: column;
+   flex: 0 0 auto;
+   transition: transform 0.5s;
+
+}
+.Bookings-SingleReview-Cards
+{
+   width: 100%;
+   height: fit-content;
+}
+.Bookings-SingleReview-Cards h2
+{
+   padding:2%;
+   margin: 0%;
+   background-color: #333;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.Bookings-SingleReview-Cards-div-1,.Bookings-SingleReview-Cards-div-2,.Bookings-SingleReview-Cards-div-3
+{
+   padding:0% 0 2%  2%;
+}
+
+.Bookings-SingleReview-Cards-div-1
+{
+   padding-top: 0.5%;
+}
+.Bookings-Review-Cards-div-1
+{
+   width: 100%;
+   padding: 1% 0 0 2%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+.Bookings-Review-Cards-div-1 p
+{
+   margin-left: 2%;
+}
+.Bookings-Review-Cards-div-1 b
+{
+   margin-left: 25%;
+   font-size: larger;
+}
+
+.Bookings-Review-Cards-div-2
+{
+   width: 100%;
+   padding:2% 0% 2% 5%;
+}
+.Bookings-Review-Cards-div-3
+{
+   width: 100%;
+   height: fit-content;
+   padding:1%;
+}
+.Bookings-Review-Cards-div-3 p
+{
+   margin: 0;
+   padding:2%;
+   width: 100%;
+   height: fit-content;
+}
+
+.Bookings-Car-No-Reviews
+{
+   background-color: white;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   height:35vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.Bookings-Card-Details
+{
+   background-color: white;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   width:25%;
+   height:45vh;
+   margin: 2%;
+   display: flex;
+   flex-direction: column;
+}
+
+.Bookings-Card-Details-Price
+{
+   width: 100%;
+   height: fit-content;
+}
+.Bookings-Card-Details-Price button
+{
+   background-color:#333;
+   color:white;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding:3%;
+   font-size: larger;
+
+}
+.Bookings-Card-Details:hover .Bookings-Card-Details-Price button
+{
+   background-color: #222;
+}
+
+
+.Bookings-Car-Details-Address
+{
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   margin-bottom: 1%;
+   height: fit-content;
+   display: flex;
+   flex-direction: row;
+   font-size: large;
+
+
+}
+.Bookings-Car-Details-Address div
+{
+   width: 50%;
+   padding:3%;
+}
+
+.Bookings-Car-Details-Address div p
+{
+   margin:0% 2%;
+}
+
+.Bookings-Car-Details-TotalPrice
+{
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+}
+.Bookings-Car-Details-TotalPrice p
+{
+   margin: 1%;
+   padding: 2%;
+}
+
+.Bookings-Car-Details-TotalPrice-div-1
+{
+   width: 100%;
+   padding:3%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+.Bookings-Car-Details-TotalPrice-div-1 div
+{
+   width: 50%;
+   text-align: center; 
+}
+.Bookings-Car-Details-TotalPrice-div-1  b
+{
+   font-size: larger;
+}
+
+.FareSummary-info
+{
+   display: flex;
+   align-items: center;
+}
+.Bookings-Car-Details-ProceedPaybtn
+{
+   width: 100%;
+   height: 100%;
+   padding: 3%;
+   background-color:#333;
+   transition: background-color 0.3s;
+   color:white;
+   cursor: pointer;	
+}
+
+.Bookings-Car-Details-ProceedPaybtn:hover
+{
+   background-color: #111;
+}

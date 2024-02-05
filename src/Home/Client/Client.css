@@ -1,0 +1,31 @@
+.Clients {
+    background-color: #222;
+    width: 100%;
+    height: 100%;
+    padding: 1.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.Clients-cards {
+    color: white;
+    width: 20%;
+    height:30%; 
+    padding: 3%;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.Clients-cards-title,.Clients-cards-info
+{
+    text-align: center;
+    margin: 0;
+}
+.Clients-cards-info
+{
+    margin-bottom: 3%;
+}
+.Clients-cards-title
+{
+    font-size: x-large;
+}

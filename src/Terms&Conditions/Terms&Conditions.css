@@ -1,0 +1,47 @@
+.Terms
+{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Terms-title
+{
+    background-color: #222;
+    color: white;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.Terms-info
+{
+    width: 100%;
+    padding-left:5% ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Terms-intro
+{
+    width: 75%;
+    text-align:justify;
+}
+
+.Terms-breif
+{
+    width: 75%;
+    padding-left:5% ;
+}
+.Terms-breif p
+{
+    padding-left: 5%;
+    text-align: justify;
+}

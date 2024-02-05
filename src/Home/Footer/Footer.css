@@ -1,0 +1,141 @@
+.Footer {
+    background-color: #222;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .Footer-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .Footer-About {
+    width: 25%;
+    padding: 1%;
+    text-align: justify;
+  }
+  .Footer-About div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .Footer-About div img
+  {
+    width: 45%;
+    height:15vh;
+  }
+
+  .Footer-About-title,
+  .Footer-Contact-title,
+  .Footer-Subscribe-title {
+    font-size: larger;
+  }
+  
+  .Footer-Contact-title,
+  .Footer-Subscribe-title {
+    margin-top: 15%;
+  }
+  .Footer-Links {
+    width: 25%;
+    padding: 4% 2%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  
+  .Footer-Links h3 {
+    text-align: center;
+    margin: 0;
+  }
+  
+  .Footer-NavList {
+    width: 60%;
+    align-self: center;
+    margin-top: 3%;
+    padding-left: 13%;
+  }
+  
+  .Footer-NavList::marker {
+    content: "\2192";
+  }
+  
+  .Footer-NavLinks {
+    text-decoration: none;
+    color: white;
+    margin-left: 3%;
+  }
+  
+  .Footer-NavLinks:hover {
+    text-decoration: underline;
+  }
+  
+  .Footer-Contact,
+  .Footer-Subscribe {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+  }
+  .Footer-Contact {
+    align-items: center;
+  }
+  .Footer-Subscribe {
+    text-align: center;
+  }
+  .Footer-Contact-info {
+    width: 100%;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+  }
+  .Footer-Contact-info address {
+    margin-bottom: 2%;
+  }
+  .Footer-Contact-info code {
+    margin-bottom: 2%;
+  }
+  
+  .Footer-Subscribe-email {
+    width: 75%;
+    padding: 3%;
+    border-radius: 2px;
+    align-self: center;
+    border: none;
+    outline: none;
+    outline-offset: none;
+  }
+  .Footer-Subscribe-btn {
+    background-color: rgb(223, 67, 67);
+    transition: background-color 0.5s;
+    color: white;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    padding: 3%;
+    margin: 5% 2%;
+  }
+  .Footer-Subscribe-btn:hover {
+    background-color: rgba(223, 67, 67, 0.762);
+  }
+  .Footer-SocialMedia,
+  .Footer-Copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+  .Footer-SocialMedia h2 {
+    align-self: center;
+  }
+  .Footer-SocialMedia a {
+    align-self: center;
+    margin-left: 1.5%;
+    color: white;
+  }
+  

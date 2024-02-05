@@ -1,0 +1,410 @@
+.ViewBookings
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.ViewBookings-SideNav
+{
+    border-right: 2px solid rebeccapurple;
+    width: 20%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ViewBookings-Active-Cards,.ViewBookings-Past-Cards,.ViewBookings-Upcoming-Cards,.ViewBookings-Service-Cards
+{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius:5px;
+    width: 50%;
+    margin-top:5%;
+    text-align: center;
+
+}
+.ViewBookings-Service-Cards
+{
+    background-color: #333;
+    
+}
+.ViewBookings-Service-Cards:hover
+{
+    transition: background-color 0.5s;
+    background-color: #222;
+
+}
+.ViewBookings-Past-Cards h3
+{
+    padding:2.5%;
+
+}
+.ViewBookings-Servicebtn
+{
+    color:white;
+    text-decoration: none;
+
+}
+
+.ViewBookings-Active-Cards h3,.ViewBookings-Past-Cards h3,.ViewBookings-Upcoming-Cards h3
+{
+    margin: 0;
+    background-color: rgb(78, 163, 78);
+    
+    color:white;
+}
+
+.ViewBookings-Upcoming-Cards h3
+{
+    background-color: rgb(5, 146, 146);
+}
+
+.ViewBookings-Past-Cards h3
+{
+    background-color: rgb(179, 28, 28);
+
+}
+
+.ViewBookings-CardDeck
+{
+    width:85%;
+    max-height: 100vh;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column; 
+    overflow-y: scroll;
+}
+.ViewBookings-CardDeck-btns
+{
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ViewBookings-CardDeck-btns button
+{
+    background-color: #333;
+    color:white;     
+    width: fit-content;
+    height: fit-content;
+    padding:1.5%;
+    cursor: pointer;
+    transform: skew(-20deg);
+}
+
+.ViewBookings-Card
+{
+    width: 100%;
+    height: 100%;
+    padding:0.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.ViewBookings-Car
+{
+    width: 45%;
+    height:35vh;
+    margin:1% 0%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+}
+.ViewBookings-Car-Img-div,.ViewBookings-Car-info-div
+{
+    width:50%;
+    padding:2%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+}
+.ViewBookings-Car-Img-div img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.ViewBookings-Car-div-1,.ViewBookings-Car-div-2,.ViewBookings-Car-div-3
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ViewBookings-Car-div-1
+{
+    font-size: x-large;
+}
+
+.Tripbtns,.TripbtnsUpcoming,.TripbtnsPast
+{
+    width: fit-content;
+    border: none;
+    border-radius: 2px;
+    padding: 2px 5px;
+    background-color: rgb(199, 243, 199);
+}
+.TripbtnsUpcoming
+{
+  background-color: rgb(76, 201, 201)
+
+}
+.TripbtnsPast
+{
+  background-color:rgb(249, 191, 191);
+
+}
+
+.ViewBookings-Car-dropdate,.ViewBookings-Car-startdate,.ViewBookings-Car-amount
+{
+    width: 100%;
+    margin: 0.5%;
+    height: fit-content;
+}
+.ViewBookings-Car-dropdate p,.ViewBookings-Car-startdate p,.ViewBookings-Car-amount span
+{
+    margin: 0;
+    margin-left:2%;
+}
+.ViewBookings-Car-btns
+{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1%;
+}
+.ViewBookings-Modalbtns button,.ViewBookings-Car-ActiveExtend,.ViewBookings-Car-ActiveEnd,.ViewBookings-Car-Cancelbtn,.ViewBookings-Car-ViewMorebtn
+
+{
+    border-radius: 2px;
+    color:white;
+    width: fit-content;
+    background-color: rgb(223, 67, 67);
+    transition: background-color 0.5s;
+    padding:3%;
+    cursor: pointer;
+    margin:0 2%;
+    border: none;
+
+}
+.ViewBookings-Car-ActiveEnd
+{
+    border: 1px solid darkblue;
+    background-color: darkblue;
+}
+.ViewBookings-Car-ActiveEnd:hover
+{
+    background-color: rgb(5, 5, 192);
+}
+
+.ViewBookings-Car-ActiveExtend:hover,.ViewBookings-Car-Cancelbtn:hover,.ViewBookings-Car-ViewMorebtn:hover
+{
+    background-color: rgb(179, 28, 28);
+
+}
+.Activenotification
+{
+    z-index: 1;
+
+}
+.ViewBookings-ViewMore-Details
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.ViewBookings-ViewMore-div-1,.ViewBookings-ViewMore-div-2,.ViewBookings-ViewMore-div-3
+{
+    width: 50%;
+    padding:1%;
+    margin-left: 2%;
+    background-color: white;
+
+}
+.ViewBookings-ViewMore-div-1
+{
+    padding: 0%;
+
+}
+.ViewBookings-ViewMore-div-2
+{
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+    
+}
+.ViewBookings-ViewMore-div-1 img
+{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ViewBookings-ViewMore-div-1 div,.ViewBookings-ViewMore-div-2 div,.ViewBookings-ViewMore-div-3 div
+{
+    padding: 1%;
+    margin: 1%;   
+    font-size:medium;
+
+}
+.ViewBookings-ViewMore-div-1 :first-child(div)
+{
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+
+}
+.ViewMore-Host,.ViewMore-Book
+{
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+    
+}
+
+.ViewBookings-ViewMore-div-2 h3,.ViewBookings-ViewMore-div-3 h3
+{
+    margin: 0;
+}
+.ViewBookings-Modalbtns button
+{
+    padding: 1%;
+    margin: 1%;
+}
+.ViewBookings-Modalbtns
+{
+    display: flex;
+    justify-content: right;
+}
+.ViewBookings-Not-Found
+{
+    width:100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ViewBooking-Cancel-Reason
+{
+    font-size: larger;
+    margin:2% ;
+}
+
+
+.ViewBooking-Extend-Form
+{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    margin: 0 3%;
+    display: flex;
+    flex-direction: column;
+}
+.ViewBooking-Extend-Form-title
+{
+    background-color: #333;
+    color: white;
+    padding: 1.5%;
+    display: flex;
+    align-items: center;
+}
+.ViewBooking-Extend-Form-title button
+{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.ViewBooking-Extend-Form-title h2
+{
+    margin: 0 auto;
+}
+.ViewBooking-Extend-Form-Details
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.ViewBooking-Extend-Form-div
+{
+    border-right: 1px solid #222;
+    width: 50%;
+
+}
+
+.ViewBooking-Extend-Form-Details-div-1,.ViewBooking-Extend-Form-Details-div-2,.ViewBooking-Extend-Form-Details-div-3
+{
+    width: 100%;
+    padding: 2%;
+    padding-left: 10%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.ViewBooking-Extend-Form-div b
+{
+    font-size: larger;
+    margin: 1% 5%;
+
+}
+
+.ViewBooking-Extend-Form-div input
+{
+    width:50%;
+    padding: 2%;
+    margin: 1% 5%;
+}
+
+.ViewBooking-Extend-Form-Details-div-3 button
+{
+    border: none;
+    background-color: #333;
+    color: white;
+    width: 50%;
+    height: 10vh;
+    padding: 2%;
+    margin: 2% 5%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    font-size: larger;
+}
+
+.ViewBooking-Extend-Payment
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ViewBooking-Extend-Payment button
+{
+    background-color: rgb(223, 67, 67);
+    color:white;
+    border: none;
+    border-radius:2px ;
+    padding: 2%;
+    margin-top:2%;
+    transition: background-color 0.5s;
+}
+
+.ViewBooking-Extend-Payment button:hover
+{
+    background-color: rgba(165, 47, 47, 0.985);
+    cursor: pointer;
+}

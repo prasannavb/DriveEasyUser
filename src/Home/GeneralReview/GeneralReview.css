@@ -1,0 +1,123 @@
+.GeneralReview
+{
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.GeneralReviews-title
+{
+    width: 100%;
+    padding:0.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.GeneralReviews-title h1
+{
+    width: fit-content;
+    border-bottom: 5px double rebeccapurple;
+}
+
+.GeneralReview-Carosuel
+{
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.GeneralReview-leftbtn,.GeneralReview-rightbtn
+{
+    width:20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.GeneralReview-rightbtn
+{
+    justify-content: start;
+}
+.GeneralReview-leftbtn button,.GeneralReview-rightbtn button
+{
+    background-color: #177dd5;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border: none;
+    border-radius: 50%;
+    padding:3%;
+    margin: 1% 5%;
+}
+.GeneralReview-Card
+{
+    background-color:#333;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width:60%;
+    height:58vh;
+}
+.GeneralReview-div
+{
+    display: flex;
+    flex-direction: row;
+}
+.GeneralReview-div-1
+{
+    color: white;
+    width: 40%;
+    height:55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.GeneralReview-Img
+{
+    width: 75%;
+    height: 50%;
+    margin-bottom: 5%;
+}
+.GeneralReview-Img img
+{
+    width: 100%;
+    height: 100%;
+}
+.GeneralReview-details
+{
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    
+}
+.GeneralReview-details b
+{
+    text-align: center;
+}
+.GeneralReview-div-2
+{
+    color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+    padding: 5% 2%;
+
+}
+
+.GeneralReview-div-2 span
+{
+    margin-top: 2%;
+    font-size: x-large;
+}
+
+
+.GeneralReview-div-2 div p
+{
+    text-align: justify;
+    font-size: 20px;
+}
+.circular--square
+{
+    border-radius:50%;
+}

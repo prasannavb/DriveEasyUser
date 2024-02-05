@@ -1,0 +1,250 @@
+.Profile
+{
+    /* border: 2px solid red; */
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Profile-RightNav
+{
+    /* border: 2px solid red; */
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 68%;
+    height: 100%;
+    padding: 1%;
+    margin-left:2%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.Profile-RightNav-title
+{
+    /* border-bottom: 2px solid red; */
+    text-align: center  ;
+}
+.Profile-RightNav-title h2
+{
+    margin: 1%;
+}
+.Profile-RightNav-Details1,
+.Profile-RightNav-Details2,
+.Profile-RightNav-Details3
+{
+    /* border: 2px solid brown; */
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+
+}
+.Profile-RightNav-Details1-div-1,
+.Profile-RightNav-Details2-div-1,
+.Profile-RightNav-Details3-div-1
+
+{
+    width: 100%;
+    padding: 0.5%;
+}
+.Profile-RightNav-Details1-div-1 h2,
+.Profile-RightNav-Details2-div-1 h2,
+.Profile-RightNav-Details3-div-1 h2
+{
+    border-bottom: 2px solid grey;
+    margin: 1% 1% 0% 1%;
+}
+.Profile-RightNav-Details1-div-2,
+.Profile-RightNav-Details2-div-2,
+.Profile-RightNav-Details3-div-3
+
+{
+    /* border: 2px solid red; */
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+
+}
+.Profile-RightNav-Details3-div-2 p
+{
+    padding-left: 1.5%;
+    margin: 0;
+}
+.Profile-RightNav-Details1-subdiv-1 ,.Profile-RightNav-Details1-subdiv-2,
+.Profile-RightNav-Details2-subdiv-1 ,.Profile-RightNav-Details2-subdiv-2,
+.Profile-RightNav-Details3-subdiv-1 ,.Profile-RightNav-Details3-subdiv-2
+{
+    /* border: 2px solid rebeccapurple; */
+    width: 50%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Profile-RightNav-Details1-subdiv-1  input[type='email'],
+.Profile-RightNav-Details1-subdiv-2 input[type='number'],
+.Profile-RightNav-Details2-subdiv-1 input[type='text'],
+.Profile-RightNav-Details3-subdiv-1 textarea
+{
+    width: 75%;
+    padding: 2%;
+    margin:1% 5%;
+}
+
+.Profile-RightNav-Details3-subdiv-1 textarea
+{   
+    width: 80%;
+    height: 15vh;
+    resize: none;
+    overflow-y: auto;
+
+}
+.Profile-RightNav-Updatebtn
+{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Profile-RightNav-Updatebtn button
+{
+    background-color: green;
+    border: none;
+    color:white;
+    cursor: pointer;
+    width: 20%;
+    padding: 1%;
+    transition: background-color 0.5s;
+}
+.Profile-RightNav-Updatebtn button:hover
+{
+    background-color: rgb(21, 111, 21);
+}
+
+.Profile-LeftNav
+{
+    /* border: 2px solid brown; */
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Profile-LeftNav-1,
+.Profile-LeftNav-2,
+.Profile-LeftNav-Verify,
+.Profile-LeftNav-3,
+.Profile-LeftNav-CashDetails,
+.Profile-LeftNav-4
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Profile-LeftNav-details
+{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+.Profile-LeftNav-Verify p,.Profile-LeftNav-CashDetails p
+{
+    width: 100%;
+    border-bottom: 1px solid grey;
+    background-color: transparent;
+    padding: 1% 5%;
+    text-align:left;
+    display: flex;
+    align-items: center;
+}
+.Profile-LeftNav-btns
+{
+    width: 100%;
+    /* border: 2px SOLID RED; */
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+.Profile-LeftNav-btns button
+{
+    background-color:#333;
+    transition: background-color 0.5s;
+    color:white;
+    width: 100%;
+    padding: 2%;
+    margin-top: 2%;
+
+}
+.Profile-LeftNav-btns button:hover
+{
+    background-color: #222;
+    cursor: pointer;
+}
+.Profile-LeftNav-Img
+{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Profile-LeftNav-CircleImg 
+{
+    /* border: 2px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius:90%;
+    width: 25%;
+    height: 15vh;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS1MqsgcnibLWsjdWTQPPmVC-oiDsErsX-1fcrz3MR_N38jc1IaP_dJXYONB0K-VYAmJE&usqp=CAU');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.Profile-LeftNav-CircleImg input[type='file']
+{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius:90%; 
+    opacity: 0;
+}
+.Profile-Errmsg
+{
+    color:red;
+    margin:1% 5%;
+
+} 
+
+.Profile-Backbtn
+{
+    color:#333;
+    width: fit-content;
+    font-size: 35px;
+    margin-left:2%;
+    text-decoration: none;
+}
