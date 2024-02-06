@@ -28,7 +28,7 @@ import { getDownloadURL,ref, uploadBytes } from 'firebase/storage';
 import {SignInDetails,  SignOutDetails } from "../Slice/userSlice";
 
 //custom icon
-import { ProfileTickIcon,ProfileCancelIcon,ZCoinsIcon,ProfileCash } from '../SVGIcons/SvgComponent';
+import { ProfileTickIcon,ProfileCancelIcon,ZCoinsIcon } from '../SVGIcons/SvgComponent';
 
 
 const Profile=()=>
@@ -202,14 +202,13 @@ const Profile=()=>
                 
                 <div className="Profile-LeftNav-3">
                     <div className="Profile-LeftNav-CashDetails">
-                        <p><ProfileCash width='20px' height='20px'/>Total Spent</p>
-                        <p><ZCoinsIcon width='20px' height='20px'/>Z-Points</p>
+                        <p><ZCoinsIcon width='20px' height='20px'/>Z-Points(Download App)</p>
                     </div>
                 </div>
                 
                 <div className="Profile-LeftNav-4">
                     <div className="Profile-LeftNav-btns">
-                        <button>Become a Host</button>
+                        <a href='https://driveeasyhost.netlify.app' target='_blank'>Become a Host</a>
                         <button onClick={Logout}>Logout</button>
                     </div>
                 </div>
