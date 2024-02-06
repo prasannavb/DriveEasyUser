@@ -20,10 +20,10 @@ import { CalendarFilled ,StarFilled} from '@ant-design/icons';
 
 //CustomSVGICons
 import {FareSummaryIcon, ProfileCancelIcon} from '../SVGIcons/SvgComponent'
-
+import {CarIcon,FuelIcon,GearIcon} from '../SVGIcons/SvgComponent'
 
 const ViewBooking=()=>
-{
+{ 
     const user=useSelector((state)=>state.user)
     const [loading,SetLoading]=useState(true)
     const [ActiveCars,SetActivecars] =useState([])
@@ -71,6 +71,7 @@ const ViewBooking=()=>
 
     const [api, contextHolder] = notification.useNotification();
 
+
     const getActiveBookings=async(uid)=>
     {
         const {data}=await axios.post("https://drive-easy-customer-server.vercel.app/ActiveBookings",{uid})
@@ -93,8 +94,10 @@ const ViewBooking=()=>
         SetActivecars((prev)=>newdata)
 
         ActiveNavbar.current.style.backgroundColor='#fd5f00'
-        PastNavbar.current.style.backgroundColor='#333'
-        UpcomingNavbar.current.style.backgroundColor='#333'
+        PastNavbar.current.style.backgroundColor='#222'
+        UpcomingNavbar.current.style.backgroundColor='#222'
+        SetLoading(false)
+
 
     }
 
@@ -105,8 +108,8 @@ const ViewBooking=()=>
         SetUpcoming(false)
         SetActivecars((prev)=>data)
         PastNavbar.current.style.backgroundColor='#fd5f00'
-        ActiveNavbar.current.style.backgroundColor='#333'
-        UpcomingNavbar.current.style.backgroundColor='#333'
+        ActiveNavbar.current.style.backgroundColor='#222'
+        UpcomingNavbar.current.style.backgroundColor='#222'
 
     }
 
@@ -132,8 +135,8 @@ const ViewBooking=()=>
         SetActive(false)
         SetActivecars((prev)=>newdata)
         UpcomingNavbar.current.style.backgroundColor='#fd5f00'
-        ActiveNavbar.current.style.backgroundColor='#333'
-        PastNavbar.current.style.backgroundColor='#333'
+        ActiveNavbar.current.style.backgroundColor='#222'
+        PastNavbar.current.style.backgroundColor='#222'
     }
 
     const getBookingsCount=async(uid)=>
@@ -154,7 +157,6 @@ const ViewBooking=()=>
         {
             Navigate("/")
         }
-        SetLoading(false)
     },[])
 
 
@@ -380,7 +382,7 @@ const ViewBooking=()=>
                     <b>Fuel: </b><span>{ViewMore?(<>{fullsingledetails.cardetails.fuel}</>):("")}</span>
                 </div>
                 <div>
-                    <b>Made Year: </b><span>{ViewMore?(<>{fullsingledetails.cardetails.year}</>):("")}</span>
+                    <b>Year: </b><span>{ViewMore?(<>{fullsingledetails.cardetails.year}</>):("")}</span>
                 </div>
                 <div>
                     <b>Total Fair: </b><span>{ViewMore?(<>&#8377;{fullsingledetails.bookingDetails.amount}</>):("")}</span>
@@ -418,7 +420,7 @@ const ViewBooking=()=>
       {ActiveCars.length?(<div className="ViewBookings-Card" >
         {Extend?(<div className="ViewBooking-Extend-Form">
             <div className="ViewBooking-Extend-Form-title">
-                <button onClick={()=>{SetExtend(false)}}>
+                <button onClick={() => { SetExtend(false);}}>
                     <ProfileCancelIcon width='30px' height='30px'/>
                 </button>
                 <h2>Continue your journey ..!</h2>
@@ -488,21 +490,32 @@ const ViewBooking=()=>
                         </div>
                      </div>
                      <div className="ViewBookings-Car-div-3">
+                     <div className="ViewBookings-Car-FuelDiv">
+                           <b><FuelIcon width='20px' height='20px'/>Fuel:</b>
+                           <p>{data.cardetails.fuel}</p>
+                        </div>
+                    
+                        <div className="ViewBookings-Car-ModelDiv">
+                           <b><CarIcon width='20px' height='20px'/>Model:</b>
+                           <p>{data.cardetails.model}</p>
+                        </div>
+                        <div className="ViewBookings-Car-TypeDiv">
+                           <b><GearIcon width='20px' height='15px'/>Type:</b>
+                           <p>{data.cardetails.type}</p>
+                        </div>
                         <div className="ViewBookings-Car-amount">
                             <b>Total fair:</b>
                             <span><b>&#8377;</b>{data.bookingDetails.amount}</span>
                         </div>
-                        <div className="ViewBookings-Car-Viewmore">
-                        </div>
                      </div>
                      <div className="ViewBookings-Car-btns">
                     {Active?(<>
-                        <button className="ViewBookings-Car-ActiveExtend" onClick={()=>{SetExtend(true),Setsinglecar({...data.bookingDetails,price:data.cardetails.price}),SetNewAmount({amt:0,drop_date:data.bookingDetails.drop_date})}}>Extend</button>
-                        <button className="ViewBookings-Car-ActiveEnd" onClick={()=>{Setconfirm(true),Setsinglecar(data.bookingDetails)}}>End</button>
+                        <button className="ViewBookings-Car-ActiveExtend" onClick={()=>{SetExtend(true),Setsinglecar({...data.bookingDetails,price:data.cardetails.price}),SetNewAmount({amt:0,drop_date:data.bookingDetails.drop_date})}}>Extend my Trip</button>
+                        <button className="ViewBookings-Car-ActiveEnd" onClick={()=>{Setconfirm(true),Setsinglecar(data.bookingDetails)}}>End my Trip</button>
                     </>):(<>
                     </>)}
                     {Upcoming?(<>
-                        <button className="ViewBookings-Car-Cancelbtn" onClick={()=>{Setconfirm(true),Setsinglecar(data.bookingDetails)}}>Cancel</button>
+                        <button className="ViewBookings-Car-Cancelbtn" onClick={()=>{Setconfirm(true),Setsinglecar(data.bookingDetails)}}>Cancel my Trip</button>
                     </>):(<></>)}
                     <button className="ViewBookings-Car-ViewMorebtn" onClick={()=>{SetViewMore(true),Setfullsingle(data)}}>View More</button>
                     </div>

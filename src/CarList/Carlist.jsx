@@ -28,6 +28,10 @@ import {CarIcon,FuelIcon,GearIcon,FASTTagIcon} from '../SVGIcons/SvgComponent'
 //Images
 import NotFoundImage from '../Images/NotFound/NotFound.png'
 
+//AOS
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Carlist=(props)=>
 {
     const user=useSelector((state)=>state.user)
@@ -59,7 +63,11 @@ const Carlist=(props)=>
     const dispatch=useDispatch()
     const desc = ['1', '2', '3', '4', '5'];
     const {Search}=Input
-   
+    useEffect(() => {
+      AOS.init({
+          // You can customize AOS initialization here if needed
+      });
+  }, []); 
     const getCarDetails=async()=>
     {
         const {data}=await axios.get("https://drive-easy-customer-server.vercel.app/findCars");

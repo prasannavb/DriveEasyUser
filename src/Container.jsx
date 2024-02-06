@@ -1,8 +1,15 @@
 import { useState,useEffect } from "react";
-import auth from "./config/firebase";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
+
+//Slice
 import { SignInDetails, SignOutDetails } from "./Slice/userSlice";
+
+//Firebase
+import auth from "./config/firebase";
+//Modules
+import Loading from './Loading/Loading'
+
 const Container=({ children })=> {
 
     const [loading, setLoading] = useState(true);
@@ -43,7 +50,7 @@ const Container=({ children })=> {
 
     if (loading) {
         return (
-            <h2>Loading</h2>
+            <Loading/>
             )
     }
 
