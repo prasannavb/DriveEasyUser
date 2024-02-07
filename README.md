@@ -27,6 +27,7 @@
 <li><b>Search Bar:</b> Enables users to search for rental cars easily using a search bar.</li>
 <li><b>Extend Rental Duration:</b> Users can extend the duration of their rental bookings if needed.</li>
 <li><b>Cancel Trips:</b> Users can cancel upcoming trips easily through the platform.</li>
+<li><b>Coupon Codes:</b> Users can apply coupon codes during the booking process to receive discounts on their rental fees.</li>
 <li><b>Secure Payments:</b> Allows users to make payments securely through the site.</li>
 <li><b>Profile Management:</b> Users can update their profiles with personal information and preferences.</li>
 <li><b>Customer Support:</b> Provides options for users to contact customer support via email for assistance.</li>
