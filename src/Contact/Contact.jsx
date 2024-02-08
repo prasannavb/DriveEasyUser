@@ -91,7 +91,7 @@ const Contact=()=>
 
     const SendMessage=async()=>
     {   
-        const {data}=await axios.post('http://localhost:8000/ContactUs',Message)
+        const {data}=await axios.post('https://drive-easy-customer-server.vercel.app/ContactUs',Message)
         if(data.action)
         {
             openNotification( 'Message sent , We will contact back you soon')
