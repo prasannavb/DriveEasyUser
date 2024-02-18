@@ -115,7 +115,7 @@ const Booking=(props)=>
     const getDescription=async(car_no)=>
     {
         const {data}=await axios.post('https://drive-easy-customer-server.vercel.app/findDescription',{car_no});
-        SetDescription(data.descripton)
+        SetDescription(data.description)
     }
 
     const getCarImages=async(sid,car_no)=>
@@ -152,6 +152,7 @@ const Booking=(props)=>
     {
         SetFetchReview(false);
         SetDesc(true);
+        getDescription(cars.car_no)
         DescriptionRef.current.style.borderBottom="5px solid orangered";
         SpecificationsRef.current.style.borderBottom=""
         ReviewsRef.current.style.borderBottom=""
